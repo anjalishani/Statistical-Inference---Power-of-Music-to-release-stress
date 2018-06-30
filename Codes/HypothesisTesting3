@@ -1,0 +1,39 @@
+#Normal Distribution
+pbar = 9/11           # sample proportion  
+p0 = 0.5                # hypothesized value 
+n = 11                # sample size 
+z = (pbar−p0)/sqrt(p0∗(1−p0)/n) 
+#z                      # test statistic 
+#Answer  Z value :   2.110579
+alpha = .05 
+z.half.alpha = qnorm(1−alpha/2) 
+c(−z.half.alpha, z.half.alpha) 
+#Answer : -1.959964  1.959964
+
+pval = 2 ∗ pnorm(z, lower.tail=FALSE)  # upper tail 
+#Pval = 0.03480848   
+
+T Distribution
+Pval = 2 ∗ pt(z, lower.tail=FALSE)
+#0.0585180
+
+#Normal Distribution
+pbar = 50/81           # sample proportion  
+p0 = 0.5                # hypothesized value 
+n = 81                # sample size 
+z = (pbar−p0)/sqrt(p0∗(1−p0)/n) 
+#z                      # test statistic 
+#Answer  Z value :  2.111111
+alpha = .05 
+z.half.alpha = qnorm(1−alpha/2) 
+c(−z.half.alpha, z.half.alpha) 
+#Answer : -1.959964  1.959964
+
+pval = 2 ∗ pnorm(z, lower.tail=FALSE)  # upper tail 
+#Pval = 0.03476276  
+
+T Distribution
+Pval = 2 ∗ pt(z, lower.tail=FALSE)
+#0.03784621
+  
+
